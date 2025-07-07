@@ -1,26 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Learning</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- INI NAVBAR -->
     <header>
-        <h1>E-LEARNING</h1>
         <nav>
-            <ul>
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Kursus</a></li>
-                <li><a href="#">Tentang</a></li>
-                <li><a href="#">Kontak</a></li>
-                <li><a href="#">Masuk/Daftar</a></li>
-            </ul>
+            <div class="nav-container">
+                <h1 class="logo">MainBelajar</h1>
+                <ul class="nav-menu">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#game">Game</a></li>
+                    <li><a hreef="#tentang">Tentang</a></li>
+                    <li><a href="#materi">Materi</a></li>
+                    <li><a href="#masuk">Masuk/Daftar</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+
+    <!-- INI ISI -->
     <main>
-        <h2>Selamat Datang di website belajar</h2>
-        <p>ini adalah konten pertama</p>
+        <section id="home">
+            <article>
+                <h2>Selamat Datang di E-Learning SD</h2>
+                <p>Belajar sambil bermain dengan Tic-Tac-Toe Literasi!</p>
+                <p>Asah kemampuan Literasi Membaca, Numerasi, dan Sains dengan cara yang menyenangkan.</p>
+                <button class="btn-primary" onclick="scrollToGame()">Mulai Belajar</button>
+            </article>
+        </section>
+
+        <section id="game" class="game-section">
+            <article class="game-article">
+                <h2>Tic Tac Toe Literasi</h2>
+                <span>Pemain X: <span id="scoreX">0</span></span>
+                <span>Pemain O: <span id="scoreO">0</span></span>
+            </article>
+        </section>
+
+        <section id="game" class="game-container">
+            <article>
+                <h2>Mainkan Tic Tac Toe!</h2>
+            </article>
+            
+            <article class="game-board" id="gameBoard" role="grid" aria-label="Tic Tac Toe board">
+                <button class="cell" data-cell-index="0" aria-label="Cell 1"></button>
+                <button class="cell" data-cell-index="1" aria-label="Cell 2"></button>
+                <button class="cell" data-cell-index="2" aria-label="Cell 3"></button>
+                <button class="cell" data-cell-index="3" aria-label="Cell 4"></button>
+                <button class="cell" data-cell-index="4" aria-label="Cell 5"></button>
+                <button class="cell" data-cell-index="5" aria-label="Cell 6"></button>
+                <button class="cell" data-cell-index="6" aria-label="Cell 7"></button>
+                <button class="cell" data-cell-index="7" aria-label="Cell 8"></button>
+                <button class="cell" data-cell-index="8" aria-label="Cell 9"></button>
+            </article>
+        </section>
+            <article class="game-controls">
+                <button class="btn-secondary" onclick="resetGame()">Reset Game</button>
+            </article>
+
+        <section id="materi" class="materi-section">
+            <article class="container">
+                <h2>Materi Pembelajaran</h2>
+                <article article="msteri-grid">
+                    <article class="materi-card">
+                        <figure class="card-icon">📖</figure>
+                        <h3>Literasi membaca</h3>
+                        <p>Kemampuan memahami, menggunakan, dan merefleksikan tulisan untuk mencapai tujuan tertentu.
+                        </p>
+                        <ul>
+                            <li>Membaca pemahaman</li>
+                            <li>Mengidentifikasi ide pokok</li>
+                            <li>Menarik kesimpulan</li>
+                            <li>Memahami struktur teks</li>
+                        </ul>
+                    </article>
+                    <article class="materi-card">
+                        <article class="card-icon">🔢</artic>
+                        <h3>Literasi Numerasi</h3>
+                        <p>Kemampuan menggunakan konsep dan keterampilan matematika dalam kehidupan sehari-hari.</p>
+                        <ul>
+                            <li>Operasi hitung dasar</li>
+                            <li>Pemecahan masalah</li>
+                            <li>Pola dan hubungan</li>
+                            <li>Pengukuran dan geometri</li>
+                        </ul>
+                        </article>
+                    </article>
+                    
+                    <article class="materi-card">
+                        <article class="card-icon">🔬</article>
+                        <h3>Literasi Sains</h3>
+                        <p>Kemampuan memahami fenomena alam dan menerapkan pengetahuan sains dalam kehidupan.</p>
+                        <ul>
+                            <li>Observasi dan eksperimen</li>
+                            <li>Klasifikasi makhluk hidup</li>
+                            <li>Siklus air dan cuaca</li>
+                            <li>Energi dan gerak</li>
+                        </ul>
+                    </article>
+                </article>
+            </article>
+        </section>
+        <section id="tentang">
+            <article>
+                <h2>Tentang artikel</h2>
+                <p>Ini adalah</p>
+            </article>
+            
+            <aside>
+                <h3>Related Info</h3>
+                <p>Ini info</p>
+            </aside>
+        </section>
+        <section id="kontak">
+            <h2>Kontak section</h2>
+            <p>perkenalan konten</p>
+        </section>
+        <section id="Daftar/Masuk">
+            <h2>Daftar/Masuk section</h2>
+            <p>Daftar/Masuk konten</p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 My Website</p>
