@@ -25,53 +25,90 @@
 
     <!-- INI ISI -->
     <main>
-        <section id="home">
-            <article>
+        <section id="home" class="hero">
+            <div class="hero-content">
                 <h2>Selamat Datang di E-Learning SD</h2>
                 <p>Belajar sambil bermain dengan Tic-Tac-Toe Literasi!</p>
                 <p>Asah kemampuan Literasi Membaca, Numerasi, dan Sains dengan cara yang menyenangkan.</p>
                 <button class="btn-primary" onclick="scrollToGame()">Mulai Belajar</button>
-            </article>
+            </div>
+
+            <div class="hero-image">
+                <div class="game-preview">
+                    <div class="preview-grid">
+                        <div class="preview-cell">📖</div>
+                        <div class="preview-cell">🔢</div>
+                        <div class="preview-cell">🔬</div>
+                        <div class="preview-cell">📚</div>
+                        <div class="preview-cell">⭐</div>
+                        <div class="preview-cell">🎯</div>
+                        <div class="preview-cell">🏆</div>
+                        <div class="preview-cell">🎮</div>
+                        <div class="preview-cell">🌟</div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="game" class="game-section">
-            <article class="game-article">
-                <h2>Tic Tac Toe Literasi</h2>
-                <span>Pemain X: <span id="scoreX">0</span></span>
-                <span>Pemain O: <span id="scoreO">0</span></span>
-            </article>
-        </section>
+            <div class="container">
+                <h2>Tic Tac Toe</h2>
+                <div class="game-info">
+                    <div class="score-board">
+                        <div class="score">
+                            <span>Pemain X: <span id="scoreX">0</span></span>
+                            <span>Pemain O: <span id="scoreO">0</span></span>
+                        </div>
+                        <div class="current-player">
+                            Giliran: <span id="curretPlayerDisplay">X</span>
+                        </div>
+                    </div>
+                </div>
 
-        <section id="game" class="game-container">
-            <article>
-                <h2>Mainkan Tic Tac Toe!</h2>
-            </article>
-            
-            <article class="game-board" id="gameBoard" role="grid" aria-label="Tic Tac Toe board">
-                <button class="cell" data-cell-index="0" aria-label="Cell 1"></button>
-                <button class="cell" data-cell-index="1" aria-label="Cell 2"></button>
-                <button class="cell" data-cell-index="2" aria-label="Cell 3"></button>
-                <button class="cell" data-cell-index="3" aria-label="Cell 4"></button>
-                <button class="cell" data-cell-index="4" aria-label="Cell 5"></button>
-                <button class="cell" data-cell-index="5" aria-label="Cell 6"></button>
-                <button class="cell" data-cell-index="6" aria-label="Cell 7"></button>
-                <button class="cell" data-cell-index="7" aria-label="Cell 8"></button>
-                <button class="cell" data-cell-index="8" aria-label="Cell 9"></button>
-            </article>
+                <div class="game-container">
+                    <div class="game-board" id="gameBoard">
+                            <button class="cell" data-cell-index="0" aria-label="Cell 1"></button>
+                            <button class="cell" data-cell-index="1" aria-label="Cell 2"></button>
+                            <button class="cell" data-cell-index="2" aria-label="Cell 3"></button>
+                            <button class="cell" data-cell-index="3" aria-label="Cell 4"></button>
+                            <button class="cell" data-cell-index="4" aria-label="Cell 5"></button>
+                            <button class="cell" data-cell-index="5" aria-label="Cell 6"></button>
+                            <button class="cell" data-cell-index="6" aria-label="Cell 7"></button>
+                            <button class="cell" data-cell-index="7" aria-label="Cell 8"></button>
+                            <button class="cell" data-cell-index="8" aria-label="Cell 9"></button>
+                    </div>
+                </div>
+
+                    <div class="game-controls">
+                        <button class="btn-secondary" onclick="resetGame()">Reset Game</button>
+                        <button class="btn-primary" onclick="showQuestion()">Tampilkan Soal</button>
+                    </div>
+                    
+                    <div class="question-container" id="questionContainer">
+                        <div class="question-card">
+                            <h3 id="questionTitle">Soal Literasi</h3>
+                            <p id="questionText">Klik "Tampilkan Soal" untuk memulai!</p>
+                            <div class="question-options" id="questionOptions">
+                                <!-- Options akan diisi oleh JavaScript -->
+                            </div>
+                            <button class="btn-answer" id="answerBtn" onclick="checkAnswer()" style="display: none;">Jawab</button>
+                        </div>
+                    </div>
+                    
+                    <div class="game-status" id="gameStatus">
+                        <p>Klik pada kotak untuk memulai permainan!</p>
+                    </div>
+                    </div>
         </section>
-            <article class="game-controls">
-                <button class="btn-secondary" onclick="resetGame()">Reset Game</button>
-            </article>
 
         <section id="materi" class="materi-section">
-            <article class="container">
+            <div class="container">
                 <h2>Materi Pembelajaran</h2>
-                <article article="msteri-grid">
+                <div class="msteri-grid">
                     <article class="materi-card">
-                        <figure class="card-icon">📖</figure>
+                        <div class="card-icon">📖</div>
                         <h3>Literasi membaca</h3>
-                        <p>Kemampuan memahami, menggunakan, dan merefleksikan tulisan untuk mencapai tujuan tertentu.
-                        </p>
+                        <p>Kemampuan memahami, menggunakan, dan merefleksikan tulisan untuk mencapai tujuan tertentu.</p>
                         <ul>
                             <li>Membaca pemahaman</li>
                             <li>Mengidentifikasi ide pokok</li>
@@ -79,8 +116,9 @@
                             <li>Memahami struktur teks</li>
                         </ul>
                     </article>
+
                     <article class="materi-card">
-                        <article class="card-icon">🔢</artic>
+                        <div class="card-icon">🔢</div>
                         <h3>Literasi Numerasi</h3>
                         <p>Kemampuan menggunakan konsep dan keterampilan matematika dalam kehidupan sehari-hari.</p>
                         <ul>
@@ -93,7 +131,7 @@
                     </article>
                     
                     <article class="materi-card">
-                        <article class="card-icon">🔬</article>
+                        <div class="card-icon">🔬</div>
                         <h3>Literasi Sains</h3>
                         <p>Kemampuan memahami fenomena alam dan menerapkan pengetahuan sains dalam kehidupan.</p>
                         <ul>
@@ -103,31 +141,57 @@
                             <li>Energi dan gerak</li>
                         </ul>
                     </article>
-                </article>
-            </article>
-        </section>
-        <section id="tentang">
-            <article>
-                <h2>Tentang artikel</h2>
-                <p>Ini adalah</p>
-            </article>
-            
-            <aside>
-                <h3>Related Info</h3>
-                <p>Ini info</p>
-            </aside>
-        </section>
-        <section id="kontak">
-            <h2>Kontak section</h2>
-            <p>perkenalan konten</p>
-        </section>
-        <section id="Daftar/Masuk">
-            <h2>Daftar/Masuk section</h2>
-            <p>Daftar/Masuk konten</p>
+                </div>
+            </div>
         </section>
     </main>
+
+    <aside class="tips=sidebar">
+        <div class="tips-container">
+            <h3>Tips Belajar</h3>
+            <div class="tip=item">
+                <h4>Strategi Tic Tac Toe</h4>
+                <p>Selalu coba kuasai tengah terlebih dahulu</p>
+            </div>
+            <div class="tip-item">
+                <h4>Literasi Membaca</h4>
+                <p>Baca dengan teliti dan pahami setiap kata kunci.</p>
+            </div>
+            <div class="tip-item">
+                <h4>Literasi Numerasi</h4>
+                <p>Latih kemampuan menghitung dengan rutin.</p>
+            </div>
+            <div class="tip-item">
+                <h4>Literasi Sains</h4>
+                <p>Amati lingkungan sekitar untuk memahami sains.</p>
+            </div>
+        </div>
+    </aside>
+
     <footer>
-        <p>&copy; 2025 My Website</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>E-Learning SD</h3>
+                <p>Platform pembelajaran interaktif untuk siswa sekolah dasar.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p>Email: info@elearningsd.com</p>
+                <p>Telepon: (021) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Materi</h3>
+                <ul>
+                    <li>Literasi Membaca</li>
+                    <li>Literasi Numerasi</li>
+                    <li>Literasi Sains</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 E-Learning SD. Semua hak dilindungi.</p>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
