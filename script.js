@@ -306,6 +306,13 @@ function checkAnswer() {
     }, 3000);
 }
 
+    const toggleBtn = document.getElementById('toggleTips');
+    const sidebar = document.getElementById('tipsSidebar');
+
+    toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('hidden');
+    });
+    
 function resetAnswerButton() {
     const answerBtn = document.getElementById('answerBtn');
     answerBtn.textContent = 'Jawab';

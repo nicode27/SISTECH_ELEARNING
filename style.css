@@ -202,7 +202,7 @@ main {
 
 /* Game Section */
 .game-section {
-    padding: 80px 0;
+    padding: 30px 0;
     background: white;
 }
 
@@ -427,11 +427,13 @@ main {
     transform: translateY(-50%);
     width: 280px;
     background: rgba(255, 255, 255, 0.95);
+    /* background: #b78dde; */
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     z-index: 100;
+    border: 2px solid #667eea;
 }
 
 .tips-container h3 {
@@ -440,6 +442,13 @@ main {
     text-align: center;
 }
 
+.tip-item-tips {
+    margin-bottom: 15px;
+    padding: none;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
 .tip-item {
     margin-bottom: 15px;
     padding: 15px;
@@ -459,11 +468,35 @@ main {
     line-height: 1.4;
 }
 
+.hidden {
+    display: none;
+}
+
+.btn-tips {
+    position: fixed;
+    top: 620px;
+    right: 30px;
+    z-index: 2000;
+    padding: 12px 18px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.btn-tips:hover {
+    background: #5a67d8;
+}
+
 /* Footer */
 footer {
     background: #333;
     color: white;
-    padding: 40px 0 20px;
+    padding: 0px 0 20px;
 }
 
 .footer-content {
