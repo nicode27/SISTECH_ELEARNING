@@ -33,7 +33,7 @@
                 <button class="btn-primary" onclick="scrollToGame()">Mulai Belajar</button>
             </div>
 
-            <div class="hero-image">
+            <!-- <div class="hero-image">
                 <div class="game-preview">
                     <div class="preview-grid">
                         <div class="preview-cell">📖</div>
@@ -47,7 +47,7 @@
                         <div class="preview-cell">🌟</div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section id="game" class="game-section">
@@ -79,32 +79,32 @@
                     </div>
                 </div>
 
-                    <div class="game-controls">
-                        <button class="btn-secondary" onclick="resetGame()">Reset Game</button>
-                        <button class="btn-primary" onclick="showQuestion()">Tampilkan Soal</button>
-                    </div>
+                <div class="game-controls">
+                    <button class="btn-secondary" onclick="resetGame()">Reset Game</button>
+                    <button class="btn-primary" onclick="showQuestion()">Tampilkan Soal</button>
+                </div>
                     
-                    <div class="question-container" id="questionContainer">
-                        <div class="question-card">
-                            <h3 id="questionTitle">Soal Literasi</h3>
-                            <p id="questionText">Klik "Tampilkan Soal" untuk memulai!</p>
-                            <div class="question-options" id="questionOptions">
+                <div class="question-container" id="questionContainer">
+                    <div class="question-card">
+                        <h3 id="questionTitle">Soal Literasi</h3>
+                        <p id="questionText">Klik "Tampilkan Soal" untuk memulai!</p>
+                        <div class="question-options" id="questionOptions">
                                 <!-- Options akan diisi oleh JavaScript -->
-                            </div>
-                            <button class="btn-answer" id="answerBtn" onclick="checkAnswer()" style="display: none;">Jawab</button>
                         </div>
+                        <button class="btn-answer" id="answerBtn" onclick="checkAnswer()" style="display: none;">Jawab</button>
                     </div>
+                </div>
                     
-                    <div class="game-status" id="gameStatus">
-                        <p>Klik pada kotak untuk memulai permainan!</p>
-                    </div>
-                    </div>
+                <div class="game-status" id="gameStatus">
+                    <p>Klik pada kotak untuk memulai permainan!</p>
+                </div>
+            </div>
         </section>
 
         <section id="materi" class="materi-section">
             <div class="container">
                 <h2>Materi Pembelajaran</h2>
-                <div class="msteri-grid">
+                <div class="materi-grid">
                     <article class="materi-card">
                         <div class="card-icon">📖</div>
                         <h3>Literasi membaca</h3>
@@ -146,10 +146,10 @@
         </section>
     </main>
 
-    <aside class="tips=sidebar">
+    <aside class="tips-sidebar">
         <div class="tips-container">
             <h3>Tips Belajar</h3>
-            <div class="tip=item">
+            <div class="tip-item">
                 <h4>Strategi Tic Tac Toe</h4>
                 <p>Selalu coba kuasai tengah terlebih dahulu</p>
             </div>
@@ -169,25 +169,6 @@
     </aside>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>E-Learning SD</h3>
-                <p>Platform pembelajaran interaktif untuk siswa sekolah dasar.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Kontak</h3>
-                <p>Email: info@elearningsd.com</p>
-                <p>Telepon: (021) 123-4567</p>
-            </div>
-            <div class="footer-section">
-                <h3>Materi</h3>
-                <ul>
-                    <li>Literasi Membaca</li>
-                    <li>Literasi Numerasi</li>
-                    <li>Literasi Sains</li>
-                </ul>
-            </div>
-        </div>
         <div class="footer-bottom">
             <p>&copy; 2024 E-Learning SD. Semua hak dilindungi.</p>
         </div>
