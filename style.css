@@ -69,6 +69,69 @@ main {
     padding: 0 20px;
 }
 
+/* Form Card Styling */
+.form-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.form-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-card input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-card input:focus {
+    border-color: #F7971E;
+    outline: none;
+}
+
+.form-card button {
+    width: 100%;
+    padding: 14px;
+    background-color: #F7971E;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-card button:hover {
+    background-color: #FFD200;
+}
+
+.form-card p {
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.form-card a {
+    color: #F7971E;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-card a:hover {
+    text-decoration: underline;
+}
+
 /* Hero Section */
 .hero {
     padding: 80px 0;
@@ -531,6 +594,48 @@ main {
     color: #444;
 }
 
+.membaca-section {
+    padding: 100px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.membaca-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #F7971E;
+    text-align: center;
+}
+
+.materi-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    border-left: 5px solid #F7971E;
+}
+
+.materi-box h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #F7971E;
+}
+
+.materi-box p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.materi-box ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.materi-box ul li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
 
 
 /* Footer */
