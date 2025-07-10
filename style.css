@@ -494,7 +494,7 @@ main {
 /* tentang.css */
 
 .tentang-section {
-    padding: 100px 20px 60px;
+    padding: 20px 20px 60px;
 }
 
 .tentang-section h2 {
@@ -516,6 +516,7 @@ main {
     line-height: 1.7;
     margin-bottom: 20px;
     color: #333;
+    text-align: justify;
 }
 
 .tentang-section ul {
@@ -530,20 +531,7 @@ main {
     color: #444;
 }
 
-@media (max-width: 768px) {
-    .tentang-section h2 {
-        font-size: 2rem;
-    }
 
-    .tentang-section h3 {
-        font-size: 1.3rem;
-    }
-
-    .tentang-section p,
-    .tentang-section ul li {
-        font-size: 1rem;
-    }
-}
 
 /* Footer */
 footer {
@@ -580,6 +568,22 @@ footer {
     border-top: 1px solid #555;
     margin-top: 30px;
 }
+
+@media (max-width: 768px) {
+    .tentang-section h2 {
+        font-size: 2rem;
+    }
+
+    .tentang-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .tentang-section p,
+    .tentang-section ul li {
+        font-size: 1rem;
+    }
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
