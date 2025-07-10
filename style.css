@@ -11,7 +11,10 @@ body {
     color: #333;
     background:#ffff;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 
 /* Header Styles */
 header {
@@ -58,9 +61,14 @@ header {
     color: #F7971E;
 }
 
+
+
+
+
 /* Main Content */
 main {
     margin-top: 70px;
+    flex-grow: 1;
 }
 
 .container {
