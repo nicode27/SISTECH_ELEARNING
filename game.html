@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- INI NAVBAR -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">MainBelajar</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="game.html">Game</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="materi.html">Materi</a></li>
+                    <li><a href="masuk.html">Masuk/Daftar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="game" class="game-section">
+        <div class="container">
+            <h2>Tic Tac Toe</h2>
+            <div class="game-info">
+                <div class="score-board">
+                    <div class="score">
+                        <span>Pemain X: <span id="scoreX">0</span></span>
+                        <span>Pemain O: <span id="scoreO">0</span></span>
+                    </div>
+                    <div class="current-player">
+                        Giliran: <span id="curretPlayerDisplay">X</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="game-container">
+                <div class="game-board" id="gameBoard">
+                    <button class="cell" data-cell-index="0" aria-label="Cell 1"></button>
+                    <button class="cell" data-cell-index="1" aria-label="Cell 2"></button>
+                    <button class="cell" data-cell-index="2" aria-label="Cell 3"></button>
+                    <button class="cell" data-cell-index="3" aria-label="Cell 4"></button>
+                    <button class="cell" data-cell-index="4" aria-label="Cell 5"></button>
+                    <button class="cell" data-cell-index="5" aria-label="Cell 6"></button>
+                    <button class="cell" data-cell-index="6" aria-label="Cell 7"></button>
+                    <button class="cell" data-cell-index="7" aria-label="Cell 8"></button>
+                    <button class="cell" data-cell-index="8" aria-label="Cell 9"></button>
+                </div>
+            </div>
+    
+            <div class="game-controls">
+                <button class="btn-secondary" onclick="resetGame()">Reset Game</button>
+                <button class="btn-primary" onclick="showQuestion()">Tampilkan Soal</button>
+            </div>
+    
+            <div class="question-container" id="questionContainer">
+                <div class="question-card">
+                    <h3 id="questionTitle">Soal Literasi</h3>
+                    <p id="questionText">Klik "Tampilkan Soal" untuk memulai!</p>
+                    <div class="question-options" id="questionOptions">
+                        <!-- Options akan diisi oleh JavaScript -->
+                    </div>
+                    <button class="btn-answer" id="answerBtn" onclick="checkAnswer()" style="display: none;">Jawab</button>
+                </div>
+            </div>
+    
+            <div class="game-status" id="gameStatus">
+                <p>Klik pada kotak untuk memulai permainan!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MainBelajar. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
