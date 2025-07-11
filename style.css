@@ -9,18 +9,15 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    background:#ffff;
+    background: #ffff;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
-
 
 /* Header Styles */
 header {
     background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.625em);
+    box-shadow: 0 0.125em 1.25em rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
@@ -28,13 +25,13 @@ header {
 }
 
 .nav-container {
-    max-width: 1500px;
+    max-width: 93.75em;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 4.375em;
 }
 
 .logo {
@@ -47,7 +44,7 @@ header {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 1.875em;
 }
 
 .nav-menu a {
@@ -61,44 +58,41 @@ header {
     color: #F7971E;
 }
 
-
-
-
-
 /* Main Content */
 main {
-    margin-top: 70px;
-    flex-grow: 1;
+    margin-top: 4.375em;
+        /* Tambahan baru */
+        flex-grow: 1;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 75em;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25em;
 }
 
 /* Form Card Styling */
 .form-card {
     background: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 1.875em;
+    border-radius: 0.9375em;
+    box-shadow: 0 0.5em 1.25em rgba(0, 0, 0, 0.1);
     margin: 0 auto;
 }
 
 .form-card label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 0.5em;
     font-weight: 600;
     color: #333;
 }
 
 .form-card input {
     width: 100%;
-    padding: 12px 16px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    padding: 0.75em 1em;
+    margin-bottom: 1.25em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.625em;
     font-size: 1rem;
     transition: border-color 0.3s ease;
 }
@@ -110,11 +104,11 @@ main {
 
 .form-card button {
     width: 100%;
-    padding: 14px;
+    padding: 0.875em;
     background-color: #F7971E;
     color: white;
     border: none;
-    border-radius: 25px;
+    border-radius: 1.5625em;
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
@@ -142,34 +136,34 @@ main {
 
 /* Hero Section */
 .hero {
-    padding: 80px 0;
+    padding: 5em 0;
     display: flex;
     align-items: center;
-    min-height: 600px;
+    min-height: 37.5em;
     background: linear-gradient(135deg, #F7971E 0%, #FFD200 100%);
     color: white;
 }
 
 .hero-content {
     flex: 1;
-    max-width: 1200px;
+    max-width: 75em;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 3.75em;
     align-items: center;
 }
 
 .hero-content h2 {
     font-size: 3rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.25em;
+    text-shadow: 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.3);
 }
 
 .hero-content p {
     font-size: 1.2rem;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375em;
     opacity: 0.9;
 }
 
@@ -181,23 +175,23 @@ main {
 
 .game-preview {
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 30px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1.25em;
+    padding: 1.875em;
+    backdrop-filter: blur(0.625em);
+    border: 0.125em solid rgba(255, 255, 255, 0.2);
 }
 
 .preview-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    width: 200px;
-    height: 200px;
+    gap: 0.625em;
+    width: 12.5em;
+    height: 12.5em;
 }
 
 .preview-cell {
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    border-radius: 0.625em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,25 +205,26 @@ main {
 
 /* Buttons */
 .btn-primary-1 {
-    padding: 10px 20px;
+    padding: 0.625em 1.25em;
     font-size: 1rem;
     width: auto;
-    max-width: 200px;
-    border-radius: 25px;
+    max-width: 12.5em;
+    border-radius: 1.5625em;
     border: none;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
+    text-align: center;
 }
 
 .btn-primary,
 .btn-secondary,
 .btn-answer {
-    padding: 15px 30px;
+    padding: 0.9375em 1.875em;
     border: none;
-    border-radius: 25px;
+    border-radius: 1.5625em;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -240,69 +235,73 @@ main {
 
 .btn-primary-1 {
     background: white;
-    color:#F7971E;
-}
-.btn-primary-1:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    color: #F7971E;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary-1:hover {
+    transform: translateY(-0.125em);
+    box-shadow: 0 0.375em 1.25em rgba(0, 0, 0, 0.4);
+    border:0.125em solid #F7971E;
+}
+
+.btn-primary,
+.btn-secondary {
     background: #F7971E;
     color: white;
 }
 
-.btn-primary:hover, .btn-secondary:hover {
+.btn-primary:hover,
+.btn-secondary:hover {
     background: #FFD200;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-0.125em);
+    box-shadow: 0 0.375em 1.25em rgba(0, 0, 0, 0.4);
 }
 
 .btn-answer {
-    background: linear-gradient(135deg,#F7971E);
+    background: linear-gradient(135deg, #F7971E);
     color: white;
 }
 
 .btn-answer:hover {
     background: #FFD200;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition:ease-in-out;
+    transform: translateY(-0.125em);
+    box-shadow: 0 0.25em 0.9375em rgba(0, 0, 0, 0.2);
+    transition: ease-in-out;
 }
 
 /* Game Section */
 .game-section {
-    padding: 100px 0;
+    padding: 6.25em 0;
     background: white;
 }
 
 .game-section h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 2.5em;
     color: #F7971E;
 }
 
 .game-info {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
 }
 
 .score-board {
     background: linear-gradient(135deg, #F7971E 0%, #FFD200 100%);
     color: white;
-    padding: 20px 40px;
-    border-radius: 15px;
+    padding: 1.25em 2.5em;
+    border-radius: 0.9375em;
     text-align: center;
-    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 0.25em 1.25em rgba(102, 126, 234, 0.3);
 }
 
 .score {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
-    margin-bottom: 10px;
+    gap: 1.875em;
+    margin-bottom: 0.625em;
     font-size: 1.1rem;
     font-weight: 600;
 }
@@ -315,24 +314,24 @@ main {
 .game-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
 }
 
 .game-board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 0.625em;
     background: #F7971E;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    padding: 1.25em;
+    border-radius: 1.25em;
+    box-shadow: 0 0.5em 1.875em rgba(0, 0, 0, 0.2);
 }
 
 .cell {
-    width: 100px;
-    height: 100px;
+    width: 6.25em;
+    height: 6.25em;
     background: white;
-    border-radius: 10px;
+    border-radius: 0.625em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -345,7 +344,7 @@ main {
 
 .cell:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25em 0.9375em rgba(0, 0, 0, 0.2);
 }
 
 .cell.x {
@@ -359,121 +358,120 @@ main {
 .game-controls {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 40px;
+    gap: 1.25em;
+    margin-bottom: 2.5em;
 }
 
 .question-container {
-    max-width: 800px;
+    max-width: 50em;
     margin: 0 auto;
 }
 
 .question-card {
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    border: 2px solid #F7971E;
+    border-radius: 1.25em;
+    padding: 1.875em;
+    box-shadow: 0 0.5em 1.875em rgba(0, 0, 0, 0.1);
+    border: 0.125em solid #F7971E;
 }
 
 .question-card h3 {
     color: #F7971E;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
     font-size: 1.5rem;
 }
 
 .question-card p {
     font-size: 1.1rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
     line-height: 1.8;
 }
 
 .question-options {
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 .option {
     background: white;
-    border: 2px solid #e9ecef;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 10px;
+    border: 0.125em solid #e9ecef;
+    border-radius: 0.625em;
+    padding: 0.9375em;
+    margin-bottom: 0.625em;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .option:hover {
     border-color: #F7971E;
-    transform: translateX(5px);
+    transform: translateX(0.3125em);
 }
 
 .option.selected {
     background: #F7971E;
     color: white;
-    
 }
 
 .game-status {
     text-align: center;
-    padding: 20px;
+    padding: 1.25em;
     background: linear-gradient(135deg, #eeba0b);
     color: white;
-    border-radius: 15px;
+    border-radius: 0.9375em;
     font-size: 1.1rem;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 
 /* Materi Section */
 .materi-section {
-    padding: 80px 0;
+    padding: 5em 0;
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);
 }
 
 .materi-section h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 50px;
+    margin-bottom: 3.125em;
     color: #F7971E;
 }
 
 .materi-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(18.75em, 1fr));
+    gap: 1.875em;
 }
 
 .materi-card {
     background: white;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 1.25em;
+    padding: 1.875em;
+    box-shadow: 0 0.5em 1.875em rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    border: 2px solid transparent;
+    border: 0.125em solid transparent;
 }
 
 .materi-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.625em);
     border-color: #FFD200;
 }
 
 .card-icon {
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 .materi-card h3 {
     color: #F7971E;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375em;
     font-size: 1.5rem;
     text-align: center;
 }
 
 .materi-card p {
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
     line-height: 1.6;
-    text-align: center;
+    text-align:justify;
 }
 
 .materi-card ul {
@@ -483,53 +481,53 @@ main {
 
 .materi-card li {
     background: #f8f9fa;
-    padding: 10px 15px;
-    margin-bottom: 8px;
-    border-radius: 8px;
-    border-left: 4px solid #F7971E;
+    padding: 0.625em 0.9375em;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+    border-left: 0.25em solid #F7971E;
 }
 
 /* Tips Sidebar */
 .tips-sidebar {
     position: fixed;
-    right: 20px;
+    right: 1.25em;
     top: 50%;
     transform: translateY(-50%);
-    width: 280px;
+    width: 17.5em;
     background: rgba(255, 255, 255, 0.95);
-    /* background: #b78dde; */
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.625em);
+    border-radius: 1.25em;
+    padding: 1.25em;
+    box-shadow: 0 0.5em 1.875em rgba(0, 0, 0, 0.1);
     z-index: 100;
-    border: 2px solid #d4d700;
+    border: 0.125em solid #d4d700;
 }
 
 .tips-container h3 {
     color: #80b918;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
     text-align: center;
 }
 
 .tip-item-tips {
-    margin-bottom: 15px;
-    padding: none;
+    margin-bottom: 0.9375em;
+    padding: 0;
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    border-radius: 10px;
-    border-left: 4px solid #80b918;
+    border-radius: 0.625em;
+    border-left: 0.25em solid #80b918;
 }
+
 .tip-item {
-    margin-bottom: 15px;
-    padding: 15px;
+    margin-bottom: 0.9375em;
+    padding: 0.9375em;
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    border-radius: 10px;
-    border-left: 4px solid #80b918;
+    border-radius: 0.625em;
+    border-left: 0.25em solid #80b918;
 }
 
 .tip-item h4 {
     color: #80b918;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125em;
     font-size: 0.9rem;
 }
 
@@ -544,127 +542,153 @@ main {
 
 .btn-tips {
     position: fixed;
-    top: 620px;
-    right: 30px;
+    top: 38.75em;
+    right: 1.875em;
     z-index: 2000;
-    padding: 12px 18px;
+    padding: 0.75em 1.125em;
     color: #F7971E;
     background: #343434;
-    border: 3px solid #F7971E;
-    border-radius: 30px;
+    border: 0.1875em solid #F7971E;
+    border-radius: 1.875em;
     font-size: 1rem;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.2);
     transition: 0.3s ease;
 }
 
 .btn-tips:hover {
-    background:#e9ecef;
+    background: #e9ecef;
 }
 
+/* Latihan Soal Section Styling */
+.latihan-soal-section {
+    margin-top: 2.5em;
+    padding-top: 1.5em;
+    border-top: 0.125em solid #ddd;
+}
+
+.soal-item {
+    background: #f9f9f9;
+    border-radius: 0.5em;
+    padding: 1.25em;
+    margin-bottom: 1.25em;
+    border-left: 0.3125em solid #FFD200;
+}
+
+.soal-item p {
+    margin-bottom: 1em;
+}
+
+.jawaban-container {
+    display: none;
+    background: #e9f5e9;
+    border: 0.0625em solid #a3d9a5;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+}
+
+.btn-jawaban {
+    background-color: #F7971E;
+    color: white;
+    padding: 0.625em 1.25em;
+    border-radius: 1.5625em;
+    cursor: pointer;
+    border: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-jawaban:hover {
+    background-color: #FFD200;
+}
 /* tentang.css */
 
 .tentang-section {
-    padding: 20px 20px 60px;
+    padding: 1.25em 1.25em 3.75em;
 }
 
 .tentang-section h2 {
     color: #F7971E;
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
     text-align: center;
 }
 
 .tentang-section h3 {
     color: #F7971E;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 1.875em;
+    margin-bottom: 0.625em;
     font-size: 1.5rem;
 }
 
 .tentang-section p {
     font-size: 1.1rem;
     line-height: 1.7;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
     color: #333;
     text-align: justify;
 }
 
 .tentang-section ul {
     list-style: disc;
-    padding-left: 20px;
-    margin-bottom: 20px;
+    padding-left: 1.25em;
+    margin-bottom: 1.25em;
 }
 
 .tentang-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
     font-size: 1.05rem;
     color: #444;
 }
 
 .membaca-section {
-    padding: 100px 20px;
-    max-width: 1000px;
+    padding: 6.25em 1.25em;
+    max-width: 62.5em;
     margin: auto;
 }
 
 .membaca-section h2 {
     font-size: 2.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 2.5em;
     color: #F7971E;
     text-align: center;
 }
 
-.materi-box {
-    background: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    margin-bottom: 40px;
-    border-left: 5px solid #F7971E;
+/* Styling for Authentication Pages (Login/Register) */
+.auth-container {
+    margin-top: 6.25em;
+    max-width: 31.25em;
 }
 
-.materi-box h3 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
+.auth-title {
+    text-align: center;
     color: #F7971E;
 }
 
-.materi-box p {
-    margin-bottom: 10px;
-    line-height: 1.6;
+.form-card .auth-link {
+    margin-top: 0.9375em;
 }
-
-.materi-box ul {
-    padding-left: 20px;
-    margin-bottom: 10px;
-}
-
-.materi-box ul li {
-    list-style-type: disc;
-    margin-bottom: 5px;
-}
-
 
 /* Footer */
 footer {
     background: #333;
     color: white;
-    padding: 0px 0 20px;
+    padding: 0 0 1.25em;
 }
 
 .footer-content {
-    max-width: 1200px;
+    max-width: 75em;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(15.625em, 1fr));
+    gap: 1.875em;
 }
 
 .footer-section h3 {
     color: #667eea;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375em;
 }
 
 .footer-section ul {
@@ -672,17 +696,17 @@ footer {
 }
 
 .footer-section ul li {
-    margin-bottom: 5px;
+    margin-bottom: 0.3125em;
 }
 
 .footer-bottom {
     text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #555;
-    margin-top: 30px;
+    padding-top: 1.25em;
+    border-top: 0.0625em solid #555;
+    margin-top: 1.875em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .tentang-section h2 {
         font-size: 2rem;
     }
@@ -699,7 +723,7 @@ footer {
 
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .nav-menu {
         display: none;
     }
@@ -714,15 +738,15 @@ footer {
     }
 
     .cell {
-        width: 80px;
-        height: 80px;
+        width: 5em;
+        height: 5em;
         font-size: 1.5rem;
     }
 
     .tips-sidebar {
         position: static;
         width: 100%;
-        margin: 20px;
+        margin: 1.25em;
         transform: none;
     }
 
@@ -732,19 +756,19 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30em) {
     .hero-content h2 {
         font-size: 1.5rem;
     }
 
     .cell {
-        width: 60px;
-        height: 60px;
+        width: 3.75em;
+        height: 3.75em;
         font-size: 1.2rem;
     }
 
     .question-card {
-        padding: 20px;
+        padding: 1.25em;
     }
 }
 
@@ -752,7 +776,7 @@ footer {
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(1.25em);
     }
 
     to {
