@@ -54,9 +54,15 @@ header {
     transition: color 0.3s ease;
 }
 
+.nav-menu a.active {
+    color: #F7971E;
+}
+
 .nav-menu a:hover {
     color: #F7971E;
 }
+
+
 
 /* Main Content */
 main {
@@ -140,7 +146,11 @@ main {
     display: flex;
     align-items: center;
     min-height: 37.5em;
-    background: linear-gradient(135deg, #F7971E 0%, #FFD200 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 222, 32, 0.618)),
+        url('https://www.shutterstock.com/image-photo/jakartaindonesia-august-17-2019-elementary-600nw-1538493152.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
 }
 
@@ -486,7 +496,34 @@ main {
     border-radius: 0.5em;
     border-left: 0.25em solid #F7971E;
 }
+/* Styling for images inside material cards */
+.card-image {
+    width: 100%;
+    height: 12em;
+    object-fit: cover;
+    /* Memastikan gambar menutupi area tanpa distorsi */
+    border-radius: 1.25em 1.25em 0 0;
+    /* Menyamakan lengkungan sudut atas kartu */
+}
 
+/* Menghapus padding dari kartu yang memiliki gambar */
+.materi-card.has-image {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Memberi padding pada konten di bawah gambar */
+.materi-card .card-content {
+    padding: 1.5em;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.materi-card .card-content h3 {
+    margin-top: 0;
+}
 /* Tips Sidebar */
 .tips-sidebar {
     position: fixed;
