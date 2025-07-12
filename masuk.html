@@ -26,19 +26,24 @@
     </header>
 
     <!-- KONTEN UTAMA -->
-    <main class="container" style="margin-top: 100px; max-width: 500px;">
-        <h2 style="text-align: center; color: #F7971E;">Masuk Akun</h2>
+<main class="container auth-container">
+    <section class="auth-section">
+        <h2 class="auth-title">Masuk Akun</h2>
         <form action="#" method="post" class="form-card">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-    
-            <label for="password">Kata Sandi</label>
-            <input type="password" id="password" name="password" required />
-    
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required />
+            </div>
+            <div>
+                <label for="password">Kata Sandi</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" required />
+            </div>
             <button type="submit" class="btn-primary">Masuk</button>
-            <p style="margin-top: 15px;">Belum punya akun? <a href="daftar.html">Daftar sekarang</a></p>
+            <p class="auth-link">Belum punya akun? <a href="daftar.html">Daftar sekarang</a></p>
         </form>
-        </main>
+    </section>
+</main>
+
     <script src="script.js"></script>
 </body>
 

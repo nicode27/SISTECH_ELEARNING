@@ -762,8 +762,30 @@ footer {
 /* Responsive Design */
 @media (max-width: 48em) {
     .nav-menu {
-        display: none;
+/* Memastikan menu tetap flexbox */
+    display: flex;
+    /* Izinkan item menu untuk pindah ke baris baru jika tidak muat */
+    flex-wrap: wrap;
+    /* Pusatkan item menu */
+    justify-content: center;
+    /* Kurangi jarak antar item di layar kecil */
+    gap: 1em;
+    padding-bottom: 0.5em;
+    /* Beri sedikit jarak di bawah jika menu menjadi 2 baris */
     }
+
+        .nav-container {
+            height: auto;
+            /* Agar tinggi navbar bisa menyesuaikan */
+            flex-direction: column;
+            /* Susun logo dan menu secara vertikal */
+            padding-top: 0.5em;
+        }
+    
+        main {
+            margin-top: 8em;
+            /* Beri ruang lebih untuk navbar yang lebih tinggi */
+        }
 
     .hero-content {
         grid-template-columns: 1fr;
